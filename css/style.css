@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: hsl(257, 40%, 49%);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    font-family: 'Open Sans','Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    padding: 2.2em;
+    text-align: center;
+    min-height: 100vh;
+}
+img {
+    width: 100%;
+}
+#logo {
+    width: 40%;
+    float: left;
+    padding-bottom: 3em;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-top: 2em;
+}
+p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1em;
+}
+button {
+    padding: 1em 4em;
+    border-radius: 2em;
+    color:hsl(257, 40%, 49%);
+    margin: 1em;
+}
+/* ================================================== 
+               Media Queries
+=================================================== */
+@media (min-width:698px) {
+    body {
+        background-image: url("../images/bg-desktop.svg");
+        background-repeat: no-repeat;
+    }
+}
