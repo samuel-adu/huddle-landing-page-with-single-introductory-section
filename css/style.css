@@ -9,6 +9,7 @@ body {
     background: hsl(257, 40%, 49%);
     background-image: url("../images/bg-mobile.svg");
     background-repeat: no-repeat;
+    background-position: top;
     font-family: 'Open Sans','Poppins', sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -35,18 +36,48 @@ p{
     padding-bottom: 1em;
     font-size: 1em;
 }
+a {
+    text-decoration: none;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 button {
     padding: 1em 4em;
     border-radius: 2em;
     color:hsl(257, 40%, 49%);
-    margin: 1em;
+    background-color: white;
+}
+i {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5em;
 }
 /* ================================================== 
                Media Queries
 =================================================== */
-@media (min-width:698px) {
+@media (min-width:769px) {
+    body,
+    .container {
+        display: flex;
+    }
     body {
-        background-image: url("../images/bg-desktop.svg");
-        background-repeat: no-repeat;
+        flex-direction: column;
+        background: hsl(257, 40%, 49%) url("../images/bg-desktop.svg");
+    }
+    .container {
+        align-items: center;
+        text-align: left;
+    }
+    .social {
+        text-align: right;
+    }
+    .img,
+    .words {
+        border: 1px solid red;
     }
 }
