@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/style.css">
-  
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  <div class="container">
+  <header class="header">
+    <div class="container">
+      <img src="images/logo.svg" alt="" class="logo">
+    </div>
+  </header>
 
-    <div class="img col">
-      <img src="images/logo.svg" alt="logo" class="logo" id="logo">
-      
-      <img src="images/illustration-mockups.svg" alt="illustration">
-    </div>
-    
-    <div class="words col">
-      <h2>Build The Community Your Fans Will Love</h2>
-      
-      <p>
-        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. 
-      </p>
-      <button>Register</button>
-    </div>
-  </div><!-- container -->
-    
-  <footer>
-    <div class="social">
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-    </div>
+  <main>
+    <div class="container">
+      <div class="section">
+        <img class="section__image" src="images/illustration-mockups.svg" alt="illustration">
+      </div>
 
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Samuel Adu</a>.
-    </p>
+      <section class="section intro">
+        <h1 class="section__title">Build The Community Your Fans Will Love</h1>
+        <p class="section__body">
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+          connections
+          with your users as you engage in genuine discussion.
+        </p>
+        <a href="#" class="btn">Register</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="social-list">
+        <l1 class="socail-list__item"><a href="#"><i class="fab fa-facebook-f"></i></a></l1>
+        <l1 class="socail-list__item"><a href="#"><i class="fab fa-twitter"></i></a></l1>
+        <l1 class="socail-list__item"><a href="#"><i class="fab fa-instagram"></i></a></l1>
+      </ul>
+    </div>
   </footer>
 </body>
+
 </html>
