@@ -85,7 +85,7 @@ img {
   margin-left: 0.5rem;
 }
 
-/* @media (min-width: 756px) {
+@media (min-width: 756px) {
   body {
     background-image: url(../images/bg-desktop.svg);
   }
@@ -101,9 +101,10 @@ img {
   .intro {
     text-align: left;
     margin-left: 2em;
+    flex: 1;
   }
 
   .social-list {
     justify-content: flex-end;
   }
-} */
+}
